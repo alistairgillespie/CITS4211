@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<!-- START OF HTML -->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+    <title> AI 4211</title>
+  </head>
+
+  <body bgcolor="white" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+    <!-- FIXED HEADER TABLE -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" background="http://www.cs.uwa.edu.au/images/3topback.jpg">
+      <tr>
+	<td><a href="http://www.cs.uwa.edu.au/"><img height="44" width="270" src="http://www.cs.uwa.edu.au/images/3rdleft.gif" border="0"></a></td>
+	<td align="right">
+	  <table border="0" cellpadding="0" cellspacing="0">
+	    <tr>
+	      <td><a href="http://www.cs.uwa.edu.au/about/"><img src="http://www.cs.uwa.edu.au/images/3about.jpg" width="52" height="44" border="0"></a></td>
+	      <td><a href="http://www.cs.uwa.edu.au/people/"><img src="http://www.cs.uwa.edu.au/images/3people.jpg" width="45" height="44" border="0"></a></td>
+	      <td><a href="http://www.cs.uwa.edu.au/prospective/"><img src="http://www.cs.uwa.edu.au/images/3prospective.jpg" width="66" height="44" border="0"></a></td>
+	      <td><a href="http://undergraduate.cs.uwa.edu.au/"><img src="http://www.cs.uwa.edu.au/images/3undergraduate.jpg" width="82" height="44" border="0"></a></td>
+	      <td><a href="http://postgraduate.cs.uwa.edu.au"><img src="http://www.cs.uwa.edu.au/images/3postgraduate.jpg" width="74" height="44" border="0"></a></td>
+	      <td><a href="http://research.cs.uwa.edu.au"><img src="http://www.cs.uwa.edu.au/images/3research.jpg" width="61" height="44" border="0"></a></td>
+	    </tr>
+	  </table>
+	</td>
+      </tr>
+    </table>
+    <!-- END OF FIXED HEADER TABLE -->
+    <!-- MARCHING LINKS TABLE -->
+    <ul>
+	<p>
+	<table border="1" cellpadding="2" cellspacing="0" bgcolor="#ebebeb">
+	  <tr>
+	    <td><font size="2">&nbsp;&nbsp;&nbsp;</font> <font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><!-- CS HOMEPAGE -->
+		<a href="http://www.cs.uwa.edu.au/"><i>home</i></a><i> &gt; <!-- PAGE STEP -->
+		  <a href="http://www.cs.uwa.edu.au/undergraduate/index.html">undergraduate</a> &gt; <!-- duplicate this for each marching step -->
+		  <!-- CURRENT PAGE -->
+		  <a href="http://www.cs.uwa.edu.au/undergraduate/courses/CITS4211/"> AI 4211</a></i> &nbsp;&nbsp;</font></td>
+	  </tr>
+	</table>
+      </p>
+    </u>
+    <p><!-- END OF MARCHING LINKS TABLE -->
+      <!-- PAGE TITLE -->
+    </p>
+    <center>
+      <p>
+<FONT COLOR=006600>
+	<font size="5"><b>A</b></font><font size="4"><b>RTIFICIAL </b></font>
+	<font size="5"><b>I</b></font><font size="4"><b>NTELLIGENCE</b></font>
+	<font size="5"><b>(CITS4211)</b></font><font size="4"><b></b></font>
+</FONT>
+      </p>
+    </center>
+    <p><!-- END OF PAGE TITLE -->
+    <hr>
+    <!-- BODY CONTENT TABLE -->
+    </p>
+
+    <p>
+    <ul>
+	<p>
+	<table border="0" cellpadding="0" cellspacing="0" width="90%">
+	  <tr>
+	    <td><!-- ############################ -->
+	      <!-- START OF BODY CONTENT [Insert Content Here ] -->
+	      <font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">
+		<!-------------------------------------------------------->
+
+<h1><i>Tetris</i></h1>
+
+<a href=http://tetris.com><i>Tetris</i></a> is a tile-matching game 
+that came out of the Soviet Union in 1984, at the height of the Cold War. 
+It is one of the <a href=http://en.wikipedia.org/wiki/List_of_best-selling_video_games>most popular video games</a> ever written, 
+appearing in many versions and selling hundreds of millions of copies. 
+There are many different versions of <i>Tetris</i> 
+(it's a great game and scientists even say that 
+<a href=http://www.engadget.com/2009/09/01/tetris-players-found-to-have-greater-brain-efficiency-thicker-c>it's good for you</a>!), 
+but fundamentally the basic idea is as follows. 
+<p>
+<ol>
+<li>The board is a semi-infinite rectangle of width <i>w</i> units, with the open end upwards. 
+<p><li>There are seven distinct pieces, each a contiguous block of four equal squares, each of side <i>1</i> unit. 
+The pieces are known as <i>tetrominoes</i>. 
+(Pieces and their representations are described below.) 
+<p><li><i>n</i> pieces are delivered in a sequence from the open end of the board. 
+<p><li>The player has a buffer that can hold up to <i>b</i> pieces at one time. 
+<p><li>Denoting the next unprocessed piece in the sequence by <i>X</i>, 
+at a typical moment in the game the player has 1-3 options: 
+<p>
+<ul>
+<li>place <i>X</i> onto the board; or 
+<li>if the buffer is not full, add <i>X</i> into the buffer; or 
+<li>if the buffer is not empty, place any piece from the buffer onto the board. 
+</ul>
+<p>
+The first two options consume <i>X</i>: the third option does not 
+(i.e. <i>X</i> is still the next unprocessed piece). 
+<p><li>Placing a piece onto the board involves four steps, 
+which we will view as happening in this order: 
+<p>
+<ol>
+<li>rotate the piece <i>90r</i> degrees anti-clockwise, 
+where <i>r</i> is an integer in <i>0 .. 3</i>; then 
+<li>locate the piece <i>k</i> units from the left wall, 
+where <i>k</i> is an integer in <i>0 .. w-1</i> (but the piece cannot protrude outside the right wall); then 
+<li>slide the piece downwards until some part of it collides 
+either with the bottom wall or with some part of a previously-placed piece; then 
+<li>for all lines across the rectangle which are completely full of squares, 
+delete those lines and slide all higher squares down accordingly. 
+</ol>
+<p>
+</ol>
+The goal is to place all <i>n</i> pieces onto the board such that the final placement occupies as little height as possible. 
+(Other (broadly equivalent) goals may be to complete a certain number of lines as quickly as possible, 
+or to keep the height of the squares on the board within some limit.)
+<p>
+A <a href=http://en.wikipedia.org/wiki/Tetris>Wikipedia page</a> exists which discusses <i>Tetris</i>. 
+There are many, many <i>Tetris</i> games available online, for example at <a href=http://tetris.com><i>tetris.com</i></a>. 
+
+<br><br><hr>
+
+<h2>Pieces and their representation</h2>
+
+Each <i>Tetris</i> piece is a contiguous block of four equal squares called a <i>tetromino</i>, 
+and pieces can be rotated by increments of 90 degrees, so there are seven distinct pieces. 
+<p><font size=14><i>&nbsp;&nbsp;&nbsp;1 &nbsp;&nbsp;&nbsp;&nbsp;2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7</i></font>
+<p><img src=Pieces.png><p>
+An instance of the problem is described by a text file where all characters in <i>1 .. 7</i> 
+denote pieces, and all other characters can be ignored, 
+for example <a href=exampleinput.txt>exampleinput.txt</a>. 
+<p>
+A placement of <i>n</i> pieces is described by a text file (like <a href=exampleoutput.txt>exampleoutput.txt</a>) containing <i>n</i> lines. 
+Each line has the form <i>x y z</i>, where <i>x</i>, <i>y</i>, and <i>z</i> are all integers and 
+<ul>
+<li><i>1 <= x <= 7</i> &nbsp;denotes a piece to be placed, 
+<li><i>0 <= y <= 3</i> &nbsp;denotes an anti-clockwise rotation of that piece by <i>90y</i> degrees 
+(so <i>0</i> denotes the orientation shown above), and 
+<li><i>0 <= z</i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;denotes 
+that the rotated piece should be dropped <i>z</i> units from the left wall 
+(any <i>z</i> which is too big will leave the rotated piece touching the right wall). 
+</ul>
+<p>
+The placement file 
+<a href=exampleoutput.txt>exampleoutput.txt</a> gives this <a href=svgs/h015.svg>final board</a>, 
+where "up" is pointing rightwards. 
+The files <i>h001.svg - h014.svg</i> show the partial placements of these pieces: 
+three lines were cleared, 
+after the 9th, 14th, and 15th pieces. 
+<p>
+Each output file will be checked for legal syntax and for consistency with the corresponding input file 
+(i.e. that it places the pieces in a legal order). 
+<br><br><hr>
+
+<h2>Submission</h2>
+
+You are required to construct a player for the version of <i>Tetris</i> described here. 
+Your program should read an <a href=exampleinput.txt>input file</a> specifying the sequence of <i>n</i> pieces, 
+and it should output a <a href=exampleoutput.txt>file</a> specifying the placement of those pieces. 
+It should choose a placement that minimises the maximum height of the squares on the final board. 
+<p>
+<ul>
+<li>Initally, you can assume that <i>w = 11, b = 1, n <= 1,000</i>. 
+If you are able to generalise your system beyond these values 
+(or even to pieces with five squares!), that would be great. 
+<li>Aim for a system that can process maybe 5-10 pieces per second. 
+<li>More example data will be available from here in due course. 
+</ul>
+<p>
+You must submit two deliverables via 
+<a href="http://www.cs.uwa.edu.au/run/cssubmit">cssubmit</a>: 
+<ul>
+<li>the code you generate in the project, as a zip archive; and 
+<li>a paper describing and analysing your work, as a PDF file. 
+</ul>
+<p>The paper should be about 5-10 pages long: it should describe 
+the structure and design of your program, and include any 
+(experimental or theoretical) analysis that you have performed. 
+<p>
+<b>If you use or refer to other people's work, make sure that you give all due credit.</b>
+
+<br><br><hr>
+
+<h2>Analysis and assistance</h2>
+
+I may offer assistance of various kinds at some stages of the project. 
+Such assistance will be announced via 
+<a href=https://secure.csse.uwa.edu.au/run/help4211><i>help4211</i></a>, or on this page. 
+On the following list, more-recent additions are nearer the top. 
+<ol>
+<p><li>I have a Haskell program which reads in a placement file and produces a sequence of svg files, 
+of the type shown above. If that would be useful to you, let me know - 
+otherwise I am planning a Python program which does the same in the near future...</li>
+<p><li>The seven pieces have an average of <i>2.7</i> distinct rotations, and 
+for <i>w = 11</i>, an average of about <i>26</i> distinct placements. 
+Thus even if <i>b = 0</i>, 
+<i>n</i> given pieces generate roughly <i>26 ^ n</i> distinct output sequences 
+(although clearly not all of them generate distinct placements). 
+With a non-zero buffer, this number is much higher. 
+It's a hard problem! 
+</ol>
+
+<br><br><hr>
+
+<h2>Assessment</h2>
+
+The project is designed to be done in pairs. 
+No larger groups will be allowed, but you may do a solo project if you prefer. 
+<p>
+You may decide how to distribute the various project tasks (for example programming, 
+testing, collecting empirical data, producing plots, writing, etc) between the group members, 
+but the marks will be divided evenly, so the workload should be roughly equal too. 
+<p>
+The project counts for 25% of your mark for CITS4211. 
+Assessment will be based on 
+<ul>
+<li>how well you have used the AI algorithms that we have studied, 
+<li>how well you have analysed the problem, 
+<li>how well you have analysed your program, 
+<li>how well your program plays <i>Tetris</i>, 
+<li>how well your paper is written, 
+<li>and anything else that occurs to me at the time. 
+</ul>
+<p>You should consult the School's guidelines on plagiarism, available from the 
+<a href="http://web.csse.uwa.edu.au/students/units/cits4211">unit outline</a>. 
+
+<br><br><hr>
+
+<h2>Deadline</h2>
+
+The project is due by <b>4pm on Wednesday 29 May</b>. 
+<p>
+Standard penalties will apply for late submission, as specified in the 
+<a href="http://web.csse.uwa.edu.au/students/units/cits4211">unit outline</a>. 
+
+	    </font>
+	      <p><!-- END OF BODY CONTENT  -->
+	    </td>
+	  </tr>
+	</table>
+      </p>
+    </ul>
+    <p>
+    <hr>
+    <!-- COPYRIGHT TABLE -->
+    <table border="0" cellpadding="10" cellspacing="2" width="100%">
+      <tr>
+	<td></td>
+	<td align="right"><a href="http://www.uwa.edu.au"><img height="58" width="233" src="http://www.cs.uwa.edu.au/images/grayuwalogo.gif" border="0"></a></td>
+      </tr>
+    </table>
+    <!-- END OF COPYRIGHT TABLE -->
+  </body>
+</html>
+<!-- END OF HTML -->
