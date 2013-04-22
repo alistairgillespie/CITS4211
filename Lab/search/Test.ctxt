@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ main()
+comment1.params=visit\ isMax
+comment1.target=double\ alphaBeta(Box,\ boolean)
+comment2.params=visit\ alpha\ beta
+comment2.target=double\ alphaBetaMax(Box,\ double,\ double)
+comment3.params=visit\ alpha\ beta
+comment3.target=double\ alphaBetaMin(Box,\ double,\ double)
+numComments=4

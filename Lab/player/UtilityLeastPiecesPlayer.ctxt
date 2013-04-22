@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=isRed
+comment0.target=UtilityLeastPiecesPlayer(boolean)
+comment1.params=percept
+comment1.target=agent.Action\ getAction(agent.Percept)
+numComments=2

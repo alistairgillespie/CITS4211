@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.Object\ clone()
+comment1.params=
+comment1.target=agent.Percept\ getPercept()
+comment2.params=action
+comment2.target=void\ update(agent.Action)
+comment3.params=
+comment3.target=agent.Actions\ getActions()
+numComments=4

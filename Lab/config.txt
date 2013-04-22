@@ -1,0 +1,17 @@
+Game:	CheX, 60, 6, gui
+Red:	samplePlayers.Hal
+Blue:	player.MiniMaxPlayer
+Player:	samplePlayers.Marvin
+Player:	samplePlayers.Hal
+Player:	samplePlayers.Arnie
+Player:	player.ReflexPlayer
+Player:	player.UtilityLeastMovesPlayer
+Player:	player.UtilityLeastPiecesPlayer
+Player: player.MiniMaxPlayer
+Setup:
+    ..wnqknw..
+    .pepepepe.
+    __________
+    __________
+    .pepepepe.
+    ..wnqknw..

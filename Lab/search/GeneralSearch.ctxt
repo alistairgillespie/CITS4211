@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=startState\ nodeInfo
+comment0.target=GeneralSearch(State,\ NodeInfo)
+comment1.params=
+comment1.target=Node\ search()
+comment2.params=
+comment2.target=Node\ select()
+comment3.params=node
+comment3.target=void\ insert(Node)
+numComments=4

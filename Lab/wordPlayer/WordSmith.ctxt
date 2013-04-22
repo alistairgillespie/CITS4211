@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=WordSmith()
+comment1.params=s
+comment1.target=boolean\ isWord(java.lang.String)
+comment2.params=percept
+comment2.target=agent.Action\ getAction(agent.Percept)
+comment3.params=start\ goal
+comment3.target=search.Node\ depthFirstSearch(java.lang.String,\ java.lang.String)
+comment4.params=start\ goal
+comment4.target=search.Node\ breadthFirstSearch(java.lang.String,\ java.lang.String)
+comment5.params=start\ goal\ maxDepth
+comment5.target=search.Node\ depthLimitedSearch(java.lang.String,\ java.lang.String,\ double)
+numComments=6

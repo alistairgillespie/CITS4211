@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=nodeInfo
+comment0.target=AlphaBetaMiniMax(NodeInfo)
+comment1.params=visit\ alpha\ beta\ d
+comment1.target=double\ alphaBetaMax(Node,\ double,\ double,\ int)
+comment2.params=visit\ alpha\ beta\ d
+comment2.target=double\ alphaBetaMin(Node,\ double,\ double,\ int)
+numComments=3

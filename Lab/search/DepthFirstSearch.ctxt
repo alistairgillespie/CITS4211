@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=startState\ nodeInfo
+comment0.target=DepthFirstSearch(State,\ NodeInfo)
+comment1.params=
+comment1.target=Node\ select()
+comment1.text=\n\ Selects\ the\ Node\ at\ the\ far\ right\ of\ the\ unvisited\ List\ -\ those\ most\ recently\ added\n
+comment2.params=node
+comment2.target=void\ insert(Node)
+comment2.text=\n\ Insert\ new\ Nodes\ on\ the\ far\ right\ end\ of\ the\ unvisited\ List.\n
+numComments=3

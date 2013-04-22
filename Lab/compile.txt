@@ -1,0 +1,2 @@
+javac -cp ".:../agent-3.4.jar:../jazzy-core.jar:../mixmeta4-3.4.jar:../samplePlayers-3.4.jar" player/*.java search/*.java
+java -cp ".:../agent-3.4.jar:../jazzy-core.jar:../mixmeta4-3.4.jar:../samplePlayers-3.4.jar" player/Play

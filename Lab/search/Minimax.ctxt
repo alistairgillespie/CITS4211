@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=nodeInfo
+comment0.target=Minimax(NodeInfo)
+comment1.params=visit
+comment1.target=double\ maxValue(Node)
+comment1.text=\n\ @return\ the\ highest\ value\ Max\ can\ achieve\ at\ this\ node\ with\ optimal\ play\n
+comment2.params=visit
+comment2.target=double\ minValue(Node)
+comment2.text=\n\ @return\ the\ lowest\ value\ Min\ can\ achieve\ at\ this\ node\ with\ optimal\ play\n
+numComments=3

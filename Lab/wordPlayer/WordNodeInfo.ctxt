@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=goal\ depthLimit
+comment0.target=WordNodeInfo(java.lang.String,\ double)
+comment1.params=goal
+comment1.target=WordNodeInfo(java.lang.String)
+comment2.params=node
+comment2.target=boolean\ isGoal(search.Node)
+comment2.text=\n\ @return\ true\ if\ this\ node\ is\ a\ goal\ node.\n
+comment3.params=node
+comment3.target=boolean\ isTerminal(search.Node)
+comment3.text=\n\ @return\ true\ in\ cases\ where\ the\ search\ should\ terminate\n
+comment4.params=node
+comment4.target=double\ utility(search.Node)
+comment4.text=\n\ @return\ the\ utility\ or\ estimated\ utility\ (evalutation\ function)\ of\ the\ node\n
+comment5.params=limit
+comment5.target=void\ setDepthLimit(double)
+comment5.text=\n\ Set\ the\ depth/cost\ limit\ for\ depth\ limited\ and\ iterative\ deepending\ searches.\n\ @param\ limit\ the\ depth\ limit\n
+comment6.params=
+comment6.target=double\ getDepthLimit()
+comment6.text=\n\ Get\ the\ depth/cost\ limit\ for\ depth\ limited\ and\ iterative\ deepening\ searches.\n\ @return\ the\ depth\ limit\n
+numComments=7
